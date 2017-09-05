@@ -24,5 +24,7 @@ public class Plan implements Serializable {
 	//bigint
 	@Column(name = "id", updatable = false, nullable = false)
 	private Long id;
+	
+	
 
 }
