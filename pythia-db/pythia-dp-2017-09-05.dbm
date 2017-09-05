@@ -26,7 +26,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	<column name="id" not-null="true">
 		<type name="bigint"/>
 	</column>
-	<column name="hansuprojectid">
+	<column name="hansu_project_id">
 		<type name="varchar"/>
 	</column>
 	<column name="name">
@@ -59,8 +59,8 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	<column name="id" not-null="true">
 		<type name="bigint"/>
 	</column>
-	<column name="projectid">
-		<type name="smallint"/>
+	<column name="project_id">
+		<type name="bigint"/>
 	</column>
 	<column name="mainno">
 		<type name="smallint"/>
@@ -106,7 +106,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 
 <constraint name="projecid_for" type="fk-constr" comparison-type="MATCH FULL"
 	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="project.project" table="project.plan">
-	<columns names="projectid" ref-type="src-columns"/>
+	<columns names="project_id" ref-type="src-columns"/>
 	<columns names="id" ref-type="dst-columns"/>
 </constraint>
 

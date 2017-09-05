@@ -44,7 +44,7 @@ ALTER TABLE project.project OWNER TO pythiaservice;
 -- DROP TABLE IF EXISTS project.plan CASCADE;
 CREATE TABLE project.plan(
 	id bigint NOT NULL,
-	projectid smallint,
+	project_id bigint,
 	mainno smallint,
 	subno smallint,
 	version varchar,
